@@ -1,49 +1,75 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+  h2{
+    font-family: 'Oswald', sans-serif;
+  }
+</style>
+</head>
 <title>CSE 199 Final Project</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="index.css">
 <body>
 
 <!-- Header -->
 <header class="w3-container w3-theme w3-padding" id="myHeader">
   <div class="w3-center">
   <h4></h4>
-  <h1 class="w3-xxxlarge w3-animate-top">BUILT WITH W3.CSS</h1>
+  <h1 class="w3-xxxlarge w3-animate-top">Some Facts</h1>
     <div class="w3-padding-32">
     </div>
   </div>
 </header>
   <!--creation of button for use later. Make sure to edit button-->
-  <!--<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">LEARN W3.CSS</button>-->
 
 <div class="w3-row-padding w3-center w3-margin-top">
 <div class="w3-quarter">
   <div class="w3-card-2 w3-padding-64" style="min-height:460px">
-      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="facts(history)" style="font-weight:900;">History</button>
+      <img src="Pictures/map.png" style="width: 100%">
+      <p></p>
+      <button class="w3-btn w3-large w3-dark-grey w3-hover-light-grey" onclick="history()" style="font-weight:900;">History</button>
+      <div>
+        <p id="history">
+        </p>
+      </div>
   </div>
-</div>penis
+</div>
 
 <div class="w3-quarter">
   <div class="w3-card-2 w3-padding-64" style="min-height:460px">
-    <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="facts(science)" style="font-weight:900;">Science</button>
+      <button class="w3-btn w3-large w3-dark-grey w3-hover-light-grey" onclick="science()" style="font-weight:900;">Science</button>
+      <div>
+        <p id="science">
+        </p>
+      </div>
   </div>
 </div>
 
 <div class="w3-quarter">
   <div class="w3-card-2 w3-padding-64" style="min-height:460px">
-    <button class="w3-btn w3-large w3-dark-grey w3-hover-light-blue " onclick="facts(sports)" style="font-weight:900;">Sports</button>
+    <button class="w3-btn w3-large w3-dark-grey w3-hover-light-blue " onclick="sports()" style="font-weight:900;">Sports</button>
+    <div>
+      <p id="sports">
+      </p>
+    </div>
   </div>
-</div>
-<div class="w3-quarter">
-  <div class="w3-card-2 w3-padding-64" style="min-height:460px">
-    <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="facts(political)" style="font-weight:900;">Political</button>
-  </div>
-</div>
 </div>
 
+<div class="w3-quarter">
+  <div class="w3-card-2 w3-padding-64" style="min-height:460px">
+    <button class="w3-btn w3-large w3-dark-grey w3-hover-light-grey" onclick="politics()" style="font-weight:900;">Political</button>
+    <div>
+      <p id="political">
+      </p>
+    </div>
+  </div>
+</div>
+</div>
 <hr>
 <h2 class="w3-center">Slideshows</h2>
 <div class="w3-content" style="max-width:800px;position:relative">
@@ -61,7 +87,7 @@
 <h2 class="w3-center">Buttons</h2>
   <br><br>
   <div class="w3-center">
-  <a class="w3-btn-floating w3-teal"><i class="fa fa-plus"></i></a>
+  <a class="w3-btn-floating w3-teal w3-hover-black"><i class="fa fa-plus"></i></a>
   <a class="w3-btn-floating w3-theme"><i class="fa fa-plus"></i></a>
   <a class="w3-btn-floating w3-disabled"><i class="fa fa-plus"></i></a>
   <br><br>
@@ -96,9 +122,51 @@ function showDivs(n) {
 
 showDivs(1);
 
-function facts(input){
-    if(input==history)
+function history(){
+      var words = new Array();
+      words[0]="History and stuff";
+      words[1]="Stuff and history";
+      words[2]="GW first president";
+      words[3]="Obama";
+
+      var i = Math.floor(words.length*Math.random());
+      document.getElementById("history").innerHTML = words[i];
 }
+
+function science(){
+      var words = new Array();
+      words[0]="Science bitch";
+      words[1]="Stuff and history";
+      words[2]="GW first president";
+      words[3]="Obama";
+
+      var i = Math.floor(words.length*Math.random());
+      document.getElementById("science").innerHTML = words[i];
+}
+
+function sports(){
+      var words = new Array();
+      words[0]="Science bitch";
+      words[1]="Stuff and history";
+      words[2]="GW first president";
+      words[3]="Obama";
+
+      var i = Math.floor(words.length*Math.random());
+      document.getElementById("sports").innerHTML = words[i];
+}
+
+function politics(){
+      var words = new Array();
+      words[0]="Science bitch";
+      words[1]="Stuff and history";
+      words[2]="GW first president";
+      words[3]="Obama";
+
+      var i = Math.floor(words.length*Math.random());
+      document.getElementById("political").innerHTML = words[i];
+}
+
+
 </script>
 
 </body>
