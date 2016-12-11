@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="CssW3/w3theme.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-<link rel="stylesheet" type="/text/css" href="index.css">
+<link rel="stylesheet" href="index.css">
 <body>
 
 <!-- Header -->
@@ -24,9 +24,9 @@
 <div class="w3-row-padding w3-center w3-margin-top">
 <div class="w3-quarter">
   <div class="w3-card-2 w3-padding-64" style="min-height:460px">
-      <img src="/img/map.png" style="width: 100%">
+      <img src="img/history-1.png" style="width: 100%">
       <p></p>
-      <button class="w3-btn w3-large w3-dark-grey w3-hover-light-grey" onclick="history()" style="font-weight:900;">History</button>
+      <button class="w3-btn w3-large w3-dark-grey w3-hover-yellow" onclick="history()" style="font-weight:900">History</button>
       <div>
         <p id="history">
         </p>
@@ -36,7 +36,9 @@
 
 <div class="w3-quarter">
   <div class="w3-card-2 w3-padding-64" style="min-height:460px">
-      <button class="w3-btn w3-large w3-dark-grey w3-hover-light-grey" onclick="science()" style="font-weight:900;">Science</button>
+      <img src="img/science.png" style="width: 100%">
+      <p></p>
+      <button class="w3-btn w3-large w3-dark-grey w3-hover-green" onclick="science()" style="font-weight:900;">Science</button>
       <div>
         <p id="science">
         </p>
@@ -46,7 +48,9 @@
 
 <div class="w3-quarter">
   <div class="w3-card-2 w3-padding-64" style="min-height:460px">
-    <button class="w3-btn w3-large w3-dark-grey w3-hover-light-blue " onclick="sports()" style="font-weight:900;">Sports</button>
+    <img src="img/ball.png " style="width: 100%">
+    <p></p>
+    <button class="w3-btn w3-large w3-dark-grey w3-hover-red" onclick="sports()" style="font-weight:900;">Sports</button>
     <div>
       <p id="sports">
       </p>
@@ -56,7 +60,10 @@
 
 <div class="w3-quarter">
   <div class="w3-card-2 w3-padding-64" style="min-height:460px">
-    <button class="w3-btn w3-large w3-dark-grey w3-hover-light-grey" onclick="politics()" style="font-weight:900;">Political</button>
+    <p></p>
+    <img src="img/map.png" style="width: 100%">
+    <p></p>
+    <button class="w3-btn w3-large w3-dark-grey w3-hover-blue" onclick="politics()" style="font-weight:900;">Political</button>
     <div>
       <p id="political">
       </p>
@@ -104,10 +111,14 @@ showDivs(1);
 
 function history(){
       var words = new Array();
-      words[0]="History and stuff";
-      words[1]="Stuff and history";
-      words[2]="GW first president";
-      words[3]="Obama";
+      words[0]="The Anglo-Zanzibar war of 1896 is the shortest war on record lasting an exhausting 38 minutes.";
+      words[1]="In late 1932 Australia went to war against the Emu bird. This war was called the Great Emu War";
+      words[2]="The Parliament of Iceland is the oldest still acting parliament in the world. It was established in 930.";
+      words[3]="Mexican General Santa Anna had an elaborate state funeral for his amputated leg.";
+      words[4]="After Pope Gregory IX associated cats with devil worship, cats throughout Europe were exterminated in droves.";
+      words[5]="In 1788 the Austrian army attacked itself and lost 10,000 men.";
+      words[6]="Prior to the 1960s tobacco companies ran physician-endorsed ads that suggested smoking had health benefits.";
+      words[7]="Saddam Hussein was given the key to the city of Detroit.";
 
       var i = Math.floor(words.length*Math.random());
       document.getElementById("history").innerHTML = words[i];
@@ -115,10 +126,14 @@ function history(){
 
 function science(){
       var words = new Array();
-      words[0]="Science bitch";
-      words[1]="Stuff and history";
-      words[2]="GW first president";
-      words[3]="Obama";
+      words[0]="There is enough DNA in an average person’s body to stretch from the sun to Pluto and back — 17 times";
+      words[1]="The average human body carries ten times more bacterial cells than human cells";
+      words[2]="There are 8 times as many atoms in a teaspoonful of water as there are teaspoonfuls of water in the Atlantic ocean";
+      words[3]="Scientists finally concluded that the chicken came first, not the egg, because the protein which makes egg shells is only produced by hens.";
+      words[4]="The World's oldest known creature, a mollusc, was 507 years old until scientists killed it by mistake.";
+      words[5]="It would take light 100,000 years to travel from one end of the Milky Way galaxy to the other.";
+      words[6]="Venus' day is longer than its year";
+      words[7]="The mix of methane, carbon and lightning in Saturn's atmosphere is causing diamonds to be forged in the planet's atmosphere, making it rain diamonds";
 
       var i = Math.floor(words.length*Math.random());
       document.getElementById("science").innerHTML = words[i];
@@ -126,10 +141,14 @@ function science(){
 
 function sports(){
       var words = new Array();
-      words[0]="Science bitch";
-      words[1]="Stuff and history";
-      words[2]="GW first president";
-      words[3]="Obama";
+      words[0]="If Michael Phelps were a country, he's be ranked 35th on the all-time gold medal list, ahead of 97 nations.";
+      words[1]="The average life span of an MLB baseball is five to seven pitches.";
+      words[2]="Golf is the only sport to be played on the moon. ";
+      words[3]="";
+      words[4]="";
+      words[5]="";
+      words[6]="";
+      words[7]="";
 
       var i = Math.floor(words.length*Math.random());
       document.getElementById("sports").innerHTML = words[i];
