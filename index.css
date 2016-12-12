@@ -7,6 +7,25 @@
 #science{
   font-size: 20px;
   color: black;
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;;
   /*text-shadow: .5px .5px 5px grey;*/
+}
+
+#sports{
+  font-size: 20px;
+  color: black;
+  font-family: 'Oswald', sans-serif;;
+  /*text-shadow: .5px .5px 5px grey;*/
+}
+
+#political{
+  font-size: 20px;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  /*text-shadow: .5px .5px 5px grey;*/
+}
+
+#nav{
+  background-color: black;
+  color: white; 
 }
