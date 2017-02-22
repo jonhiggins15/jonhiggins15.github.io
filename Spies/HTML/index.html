@@ -27,7 +27,7 @@
     };
     counter++;
     spy.icon.src = "Images/waves.jpg";
-    spy.icon.style.borderRadius = '85%';
+    spy.icon.class = "rounded-circle";
 
         $("#test").html(spy.icon);
         $("#thing").html(counter);
@@ -38,7 +38,7 @@
           spy.life = true;
         }
         else{
-          $("#testing").html("The " + spy.name + " is dead");
+          //$("#testing").html("The " + spy.name + " is dead");
           $("#test").fadeTo("slow", .5);
           spy.life = false;
         }
