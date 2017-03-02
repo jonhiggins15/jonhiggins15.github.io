@@ -2,47 +2,43 @@
 <html>
 <head>
 <link rel = "stylesheet" type = "text/css" href = "theme.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!--<script src = "index.js"></script-->
 </head>
-<title>Algorithms for different cards</title>
+<title>Test</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-      <button id = "button" onclick="spy(true)">Test</button>
-      <div id = "testing"></div>
-      <div id = "test"></div>
-      <p id="thing"></p>
+
+<nav class="navbar navbar-inverse bg-primary">
+  <button id="signIn">
+    <i class="material-icons" id="icon">account_circle</i>
+  </button>
+</nav>
+
+<header>
+  <div id = "Header">SPIES</div>
+</header>
+<body id="body">
+  <div id = "roomCreation">
+      <form>
+      <div class="col-xs-4">
+        <label for="selection" id="testing">Room Name</label>
+        <input type="text" class="form-control" id="formGroupExampleInput">
+      </div>
+      <div class="col-xs-4">
+      <label for="selection" id="testing">Amount of Players:</label>
+        <select class="form-control" id="sel1">
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+        </select>
+      </div>
+      </form>
+  </div>
 
 </body>
-
-<script>
-  var counter = 0;
-  function spy(value){
-  $(document).ready(function(){
-    var spy={
-      name: "Spy",
-      life: true,
-      killer: true,
-      icon: new Image()
-    };
-    counter++;
-    spy.icon.src = "Images/waves.jpg";
-    spy.icon.class = "rounded-circle";
-
-        $("#test").html(spy.icon);
-        $("#thing").html(counter);
-
-        if(counter<3 || counter>7){
-          $("#testing").html("True");
-          $("#test").fadeTo("slow", 1);
-          spy.life = true;
-        }
-        else{
-          //$("#testing").html("The " + spy.name + " is dead");
-          $("#test").fadeTo("slow", .5);
-          spy.life = false;
-        }
-      });
-  }
-</script>
 </html>

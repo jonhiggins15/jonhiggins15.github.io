@@ -1,3 +1,35 @@
-p{
+#Header{
   font-family: fantasy;
+  color: white;
+  background-color: black;
+  padding-top: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 100px;
+}
+
+#body{
+  background-color: black;
+}
+
+#testing{
+  color: white;
+  text-align: center;
+}
+
+#roomCreation{
+  padding-left: 200px;
+  position: relative;
+}
+
+#signIn{
+  background: transparent;
+  border: none;
+}
+
+#icon{
+  position: absolute;
+  left: auto;
+  right: 0;
+  padding-right: 10px;
 }
