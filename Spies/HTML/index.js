@@ -7,9 +7,7 @@ auth.onAuthStateChanged(function(user) {
     $('#account').hide();
     $('#signOut').show();
     document.getElementById("loginText").textContent = "Log Out";
-    // $('#line').show();
   } else {
-    //window.alert("not logged in");
     document.getElementById("loginText").textContent = "Log In";
     $('#signOut').hide();
     $('#account').show();

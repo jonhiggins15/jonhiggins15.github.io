@@ -23,6 +23,10 @@
   background-color: black;
 }
 
+#roomName{
+  color: black;
+}
+
 #testing{
   color: white;
   text-align: center;
@@ -53,6 +57,10 @@
   right: 0;
   top: 12px;
 }
+#gameList{
+  color: black;
+}
+
 
 #account:hover{
   color: black;
@@ -62,6 +70,9 @@
 #roomButton{
   color: black;
 }
+
+
+
 #signOut{
   right: 0;
   left: auto;
